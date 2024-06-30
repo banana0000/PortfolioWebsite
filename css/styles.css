@@ -18,7 +18,7 @@
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
-  --bs-green: #198754;
+  --bs-green: #875d19;
   --bs-teal: #1abc9c;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
@@ -36,7 +36,7 @@
   --bs-gray-900: #212529;
   --bs-primary: #1abc9c;
   --bs-secondary: #2c3e50;
-  --bs-success: #198754;
+  --bs-success: #84baa1;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
@@ -99,7 +99,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: var(--bs-black-rgb);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
