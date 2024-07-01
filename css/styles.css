@@ -247,10 +247,10 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
-  color: var(--bs-orange);
+  color: orange;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
