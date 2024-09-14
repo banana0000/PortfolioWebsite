@@ -19,11 +19,12 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
+
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top">Eszter K.</a>
+            <a class="navbar-brand" href="#page-top">EK</a>
             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +37,7 @@
                             href="#portfolio">Portfolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
                             href="#about">About</a></li>
-                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
                                 href="#contact">Contact</a></li>
                     
                 </ul>
@@ -54,10 +55,11 @@
             <!-- Masthead Subheading-->
             <p class="masthead-subheading font-weight-light mb-0">Power BI Developer - Analyst</p>
         </div>
-    </header>
+    </header><br><br>
     <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="portfolio">
-        <div class="container">
+        <section class="page-section portfolio" id="portfolio">
+
+                <div class="container">
             <!-- Portfolio Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">My Projects</h2>
             <!-- Icon Divider-->
@@ -67,15 +69,21 @@
                 <div class="divider-custom-line"></div>
             </div><br><br>
             <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Portfolio Item 1-->
+              <!-- Search Bar -->
+<div class="search-bar-container text-center mb-4">
+    <input type="text" id="searchInput" placeholder="Search projects..." class="form-control" style="width: 50%; margin: 0 auto;" />
+    <button onclick="searchProjects()" class="btn btn-primary mt-2">Search</button>
+</div><br>
+ <p class="text-center"> sales, marketing, finance, IT, car, coffee, education</p><br>
+        <div class="row justify-content-center">
+           <!-- Portfolio Item 1-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                         <div
                             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/Marketing.png" alt="..." />
+                        <img class="img-fluid" id = "marketing"src="assets/img/portfolio/Marketing.png" alt="..." />
                     </div>
                     <a href="https://app.powerbi.com/view?r=eyJrIjoiMGFkMzZiMDMtMTVmZS00MmY5LWI2NTctZTEyODJkNDEyZWIxIiwidCI6IjQ2NTRiNmYxLTBlNDctNDU3OS1hOGExLTAyZmU5ZDk0M2M3YiIsImMiOjl9">
                     Visit project
@@ -89,7 +97,7 @@
                             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/Coffenew.png" alt="..." />
+                        <img class="img-fluid" id= "sales"src="assets/img/portfolio/Coffenew.png" alt="..." />
                         
                     </div>
                     <a href="https://app.powerbi.com/view?r=eyJrIjoiZjA3NTgwNGEtYWQxYi00YTIyLWE4YzktMjgwMjAxMTU0OWNmIiwidCI6IjQ2NTRiNmYxLTBlNDctNDU3OS1hOGExLTAyZmU5ZDk0M2M3YiIsImMiOjl9">Visit project</a>
@@ -119,11 +127,11 @@
                         </div>
                         <img class="img-fluid" src="assets/img/portfolio/CRM and Pipelines-1.png" alt="..." />
                     </div>
-                    <a href="https://app.powerbi.com/view?r=eyJrIjoiZWZiOTIyZGUtZDYyMi00NjVlLWE4MDYtMTZjMDA0NDViMTc3IiwidCI6IjQ2NTRiNmYxLTBlNDctNDU3OS1hOGExLTAyZmU5ZDk0M2M3YiIsImMiOjl9">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMWM3ZWJkNDctMWUxNC00NmQwLWI4NzEtY2Q5NGIyM2UzOTkwIiwidCI6IjQ2NTRiNmYxLTBlNDctNDU3OS1hOGExLTAyZmU5ZDk0M2M3YiIsImMiOjl9">
                     Visit project</a>
                     <p>CRM Analysis</p>
                     </div>
-                <!-- Portfolio Item 4-->
+                <!-- Portfolio Item 5-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                         <div
@@ -132,13 +140,13 @@
                         </div>
                         <img class="img-fluid" src="assets/img/portfolio/Olympic games-1.png" alt="..." />
                     </div>
-                    <a href="">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiN2RlZjBiNWQtZGM0MC00MGUyLWE0Y2ItYjQ1YjE2MTI2Njg2IiwidCI6IjQ3NjRkMzczLWI1YTUtNDk4Ni04OTJkLTdhNmQ1MWQwZmJjNSIsImMiOjh9">
                        Visit project
                     </a>
                     <p>Olympic games 2024</p>
                     
                 </div>
-                <!-- Portfolio Item 4-->
+                <!-- Portfolio Item 6-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                         <div
@@ -147,12 +155,146 @@
                         </div>
                         <img class="img-fluid" src="assets/img/portfolio/Internal Email analyisis-1.png" alt="..." />
                     </div>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMjVmMzU1ZjAtZjEzNy00ZDYyLTkxZjAtNGE4ZWVlY2I2OWZjIiwidCI6IjQ3NjRkMzczLWI1YTUtNDk4Ni04OTJkLTdhNmQ1MWQwZmJjNSIsImMiOjh9">
+                       Visit project
+                    </a>
+                    <p>Internal email analysis</p>
+                    
+                </div>
+                <!-- Portfolio Item 7-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/World Coffe Roasters-1.png" alt="..." />
+                    </div>
+                    <a href="">
+                       Visit project
+                    </a>
+                    <p>World Coffee Roasters analysis</p>
+                    
+                </div>
+                <!-- Portfolio Item 8-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Maven AdwentureWorks-1.png" alt="..." />
+                    </div>
                     <a href="">
                        Visit project
                     </a>
                     <p>Internal email analysis</p>
                     
                 </div>
+                <!-- Portfolio Item 9-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/maven market.png" alt="..." />
+                    </div>
+                    <a href="">
+                       Visit project
+                    </a>
+                    <p>Maven Market Sales analysis</p>
+                    
+                </div>
+                <!-- Portfolio Item 10-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Chocolate.png" alt="..." />
+                    </div>
+                    <a href="">
+                       Visit project
+                    </a>
+                    <p>Chocolate Sales Analysis</p>
+                </div>
+                    <!-- Portfolio Item 11-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Electronic products/Electronic products-1.png" alt="..." />
+                    </div>
+                    <a href="">
+                       Visit project
+                    </a>
+                    <p>Electronic Products</p>
+                </div>
+                    <!-- Portfolio Item 12-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Car Insurances.jpeg" alt="..." />
+                    </div>
+                    <a href="">
+                       Visit project
+                    </a>
+                    <p>Car Insurances</p>
+                    
+                </div>
+                <!-- Portfolio Item 13-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Christmas Sales/Christmas Sales-1.png" alt="..." />
+                    </div>
+                    <a href="">
+                       Visit project
+                    </a>
+                    <p>Christmas Sales</p>
+                    
+                </div>
+                <!-- Portfolio Item 14-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Data - Driven Education Management.jpeg" alt="..." />
+                    </div>
+                    <a href="">
+                       Visit project
+                    </a>
+                    <p>Data Driven Education</p>
+                    
+                </div>
+                <!-- Portfolio Item 15-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/CRM.jpeg" alt="..." />
+                    </div>
+                    <a href="">
+                       Visit project
+                    </a>
+                    <p>CRM Maven</p>
+                    
+                </div>
+    </section>
 
                  
             <!-- About Section Content-->
@@ -160,52 +302,29 @@
                 <div class="text-center"><h1>About</h1></div><br>
             <div class="row">
                 <div class="col-lg-16 ms-auto">
-                    <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
-                        includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS
-                        stylesheets for easy customization.</p>
-                        <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
-                            includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS
-                            stylesheets for easy customization.</p>
-                            <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
-                                includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS
-                                stylesheets for easy customization.</p>
+                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis temporibus accusantium eaque perferendis 
+                        tempore dignissimos, commodi maxime ad? Nostrum deleniti dolore maiores tempora voluptates consequatur at incidunt sunt odio illum!
+                    Accusamus debitis provident modi quod, illum quisquam omnis, accusantium eum repellendus officia
+                     perspiciatis cupiditate similique, quos numquam sit voluptatem neque nisi. Nam tempore repudiandae molestias, eveniet culpa commodi odit rerum?
+
+                    </p>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore facere iure earum quos aut sunt repellat, voluptate reiciendis, optio magnam dolorum quia maxime labore. Veritatis cumque harum temporibus perferendis incidunt?
+                        Aliquam sed sapiente accusamus, autem, recusandae id dolorem facere culpa nemo explicabo, debitis maiores voluptates dolor esse labore! Molestiae commodi repudiandae minus blanditiis inventore doloremque sunt placeat perspiciatis consectetur perferendis!</p>
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis temporibus accusantium eaque perferendis 
+                            tempore dignissimos, commodi maxime ad? Nostrum deleniti dolore maiores tempora voluptates consequatur at incidunt sunt odio illum!
+                        Accusamus debitis provident modi quod, illum quisquam omnis, accusantium eum repellendus officia
+                         perspiciatis cupiditate similique, quos numquam sit voluptatem neque nisi. Nam tempore repudiandae molestias, eveniet culpa commodi odit rerum?
+    
+                        </p>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore facere iure earum quos aut sunt repellat, voluptate reiciendis, optio magnam dolorum quia maxime labore. Veritatis cumque harum temporibus perferendis incidunt?
+                            Aliquam sed sapiente accusamus, autem, recusandae id dolorem facere culpa nemo 
                 </div>
                
         </div>
     </section>
    
-           
-                        <!-- Message input-->
-                        
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a
-                                    href="https://startbootstrap.com/solution/contact-forms">
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div>
-                        <!-- Submit Button-->
-                       
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer-->
+<!-- Footer-->
+<section id="contact">
     <footer class="footer text-center">
         <div class="container">
             <div class="row">
@@ -214,6 +333,7 @@
                     
                    
                 </div>
+            
                 <!-- Footer Social Icons-->
                 <div id="contact" class="col-lg-16 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Contact</h4>
@@ -224,6 +344,7 @@
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
                                 class="fab fa-fw fa-github"></i></a>
                 </div>
+            </section>
                 <!-- Footer About Text-->
                 
             </div>
@@ -245,5 +366,29 @@
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
+<script>
+    function searchProjects() {
+        // Get the search query from the input field
+        var searchQuery = document.getElementById('searchInput').value.toLowerCase();
+
+        // Get all project descriptions or titles
+        var projectTitles = document.querySelectorAll('p'); // Assuming you're searching within <p> tags
+
+        // Loop through all project titles and descriptions
+        for (var i = 0; i < projectTitles.length; i++) {
+            var projectTitle = projectTitles[i].innerText.toLowerCase(); // Convert to lowercase for case-insensitive search
+
+            // Check if the project title contains the search query
+            if (projectTitle.includes(searchQuery)) {
+                // Show the project if it matches the search
+                projectTitles[i].parentElement.style.display = 'block';
+            } else {
+                // Hide the project if it doesn't match
+                projectTitles[i].parentElement.style.display = 'none';
+            }
+        }
+    }
+</script>
+
 
 </html>
