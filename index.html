@@ -34,9 +34,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#portfolio">Portfolio</a></li>
+                            href="#powerbi">Power BI</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#about">About</a></li>
+                            href="#dash">Dash & Plotly</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
                                 href="#contact">Contact</a></li>
                     
@@ -56,8 +56,8 @@
             <p class="masthead-subheading font-weight-light mb-0">Power BI Developer - Analyst</p>
         </div>
     </header><br><br>
-    <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+    <!-- Power BI Section-->
+        <section class="page-section portfolio" id="powerbi">
 
                 <div class="container">
             <!-- Portfolio Section Heading-->
@@ -435,54 +435,83 @@
     </section>
 
                  
-            <!-- About Section Content-->
-    <section id="about" height="500px" background:"green">
-                <div class="text-center"><h1>About</h1></div><br>
-            <div class="row" style="margin-left:40px;">
-                <div class="col-lg-16 ms-auto">
-                    <p class ="text-center" style="font-size:20px" >I like the new challenges and I enjoy creating useful things,<br> especially in Power BI,
-                        where I can visually see the results of my data analysis. <br>
-                        I have several years of experience in the financial field, which I can use in Power BI reporting.</p><br><br>
-                    <h3>My skills</h2>
-                    <p class="lead">Power BI, Excel, PowerPoint, Figma, HTML, CSS, SQL basic, Finance
-                    </p><br><br><br> <br><br>   
-                
+            <!-- Dash Section Content-->
+
+            <section class="page-section portfolio" id="dash">
+
+                <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Dash and Plotly</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-line-chart"></i></div>
+                <div class="divider-custom-line"></div>
+            </div><br><br>
+            <!-- Portfolio Grid Items-->
+              <!-- Search Bar -->
+<div class="search-bar-container text-center mb-4">
+    <input type="text" id="searchInput" placeholder="Search projects..." class="form-control" style="width: 50%; margin: 0 auto;" />
+    <button onclick="searchProjects()" class="btn btn-primary mt-2">Search</button>
+</div><br>
+ <p class="text-center">animal, map, other</p><br>
+        <div class="row justify-content-center">
+           <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid" id ="map" src="assets/img/portfolio/NYC_City.png" alt="..." />
+                    </div>
+                    <a href="https://koveszter.pythonanywhere.com/">
+                    Visit project
+                    </a>
+                    <p>NYC Energy analysis with map </p>
                 </div>
-        </div>
-    </section>
-   
-<!-- Footer-->
-<section id="contact">
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    
-                   
-                </div>
-            
-                <!-- Footer Social Icons-->
-                <div id="contact" class="col-lg-16 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Contact</h4>
-                    
-                    
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/hu-eszter-kovacs/"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/banana0000?tab=repositories"><i
-                                class="fab fa-fw fa-github"></i></a>
+        <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid" id="animals" src="assets/img/portfolio/Dallas_Animals.png" alt="dallas" />
+                        
+                    </div>
+                    <a href="https://py.cafe/app/banana0000/Dallas%20Animal%20Shelter">Visit project</a>
+                    <p>Dallas Animals Shelter Analysis </p>
                 </div>
 
-                <!-- Footer About Text-->
-                
+   
+<!-- Footer -->
+
+<footer id="contact" class="footer text-center bg-secondary"> <!-- 1. Háttérszín hozzáadva -->
+        <div class="container-fluid"> <!-- 2. Teljes szélességű container -->
+            <div class="row justify-content-center"> <!-- 3. Középre igazítás -->
+                <!-- Footer Social Icons -->
+                <div class="col-lg-8 mb-5 mb-lg-0"> <!-- 4. Grid méret javítva -->
+                    <h4 class="text-uppercase mb-4 white">Contact</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/hu-eszter-kovacs/">
+                        <i class="fab fa-fw fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/banana0000?tab=repositories">
+                        <i class="fab fa-fw fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </footer>
-</section>
-    <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; Portfolio Website 2024 - Eszter Kovacs</small></div>
+</footer>
+
+    
+    <!-- Copyright Section -->
+    <div class="copyright py-4 text-center text-white bg-dark"> <!-- 5. Háttérszín hozzáadva -->
+        <div class="container">
+            <small>Copyright &copy; Portfolio Website 2024 - Eszter Kovacs</small>
+        </div>
     </div>
+
     
    
     <!-- Bootstrap core JS-->
