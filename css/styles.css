@@ -11039,11 +11039,30 @@ html {
   }
 }
 
-footer.footer{
-  padding: 2rem;
-  width: 100%;
-}
 footer {
-  width:100%;
- }
+  width: 100%; /* A lábléc teljes szélességű lesz */
+  padding: 30px 0; /* Igény szerint módosítható a padding */
+}
+
+footer .container-fluid {
+  max-width: 100%; /* A container teljes szélességű lesz */
+  padding: 0; /* Törli a container alapértelmezett paddingját */
+}
+
+.copyright {
+  width: 100%; /* A copyright rész teljes szélességű lesz */
+  padding: 20px 0;
+}
+
+.copyright .container-fluid {
+  max-width: 100%; /* A container teljes szélességű */
+  padding: 0;
+}
+
+
+footer, .copyright {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
