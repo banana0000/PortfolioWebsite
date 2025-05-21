@@ -11042,7 +11042,7 @@ html {
 
 .dash-img {
   width: 100%;
-  height: 220px;      /* vagy amekkora neked tetszik */
+  height: 200px;      /* vagy amekkora neked tetszik */
   object-fit: cover;  /* így a kép nem torzul, hanem vágódik */
   border-radius: 8px; /* opcionális, szép lekerekítés */
 }
