@@ -11016,17 +11016,20 @@ html {
   cursor: pointer;
   position: relative;
   display: block;
-  max-width: 25rem;
+  width: 100%;
   border-radius: 0.5rem;
   overflow: hidden;
   text-decoration: none;
 }
 .portfolio .portfolio-item img {
+  width: 100%;
+  height: 220px !important;
+  object-fit: cover;
   transition: transform 0.4s ease, filter 0.4s ease;
 }
 .portfolio .portfolio-item:hover img {
-  transform: scale(1.08);
-  filter: brightness(0.45);
+  transform: scale(1.15);
+  filter: brightness(0.55);
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
@@ -11043,7 +11046,7 @@ html {
 }
 .portfolio .portfolio-item:hover .portfolio-item-caption {
   opacity: 1;
-  background-color: rgba(30, 120, 70, 0.55);
+  background-color: rgba(39, 174, 96, 0.4);
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.2rem;
@@ -11092,8 +11095,13 @@ html {
 
 .dash-img {
   width: 100%;
-  height: 200px;      /* vagy amekkora neked tetszik */
-  object-fit: cover;  /* így a kép nem torzul, hanem vágódik */
-  border-radius: 8px; /* opcionális, szép lekerekítés */
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+.portfolio-item:hover .dash-img {
+  transform: scale(1.15);
+  filter: brightness(0.55);
 }
 
